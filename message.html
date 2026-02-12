@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I'm Sorry ❤️</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Comic Sans MS;
+    background:linear-gradient(to right,#ff758c,#ff4e8a);
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+h1{
+    font-size:28px;
+}
+
+#text{
+    margin-top:20px;
+    font-size:22px;
+    white-space:pre-line;
+}
+</style>
+</head>
+
+<body>
+
+<audio autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<h1>Anjali ❤️</h1>
+<p id="text"></p>
+
+<button onclick="nextPage()">Forgive Me 💕</button>
+
+<script>
+const message = `Heyy Paithiyam I LOVE YOU dii..💕
+I love your character, the way you love me and care for me every single day.
+If I ever hurt you, I am truly sorry.
+You are my happiness and my forever Paithiyam 😜❤️
+Sorry dii Chlm..🥺`;
+
+let i=0;
+function typeWriter(){
+    if(i<message.length){
+        document.getElementById("text").innerHTML+=message.charAt(i);
+        i++;
+        setTimeout(typeWriter,40);
+    }
+}
+typeWriter();
+
+function nextPage(){
+    window.location.href="memory.html";
+}
+</script>
+
+</body>
+</html>
