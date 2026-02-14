@@ -75,10 +75,6 @@ button{
 
 <body>
 
-<audio id="bgMusic" loop>
-    <source src="music.mp3" type="audio/mpeg">
-</audio>
-
 <h1>Heyy Anjali 😘</h1>
 <h1 class="main-question">
 Will you forgive and stay with me forever 💕
@@ -114,7 +110,7 @@ function moveBtn(){
 function createPetal(){
     const petal=document.createElement("div");
     petal.classList.add("petal");
-    petal.innerHTML=Math.random()>0.5?"🌹":"💖";
+    petal.innerHTML=Math.random()>0.5?"💕":"💖";
     petal.style.left=Math.random()*100+"vw";
     petal.style.animationDuration=(Math.random()*4+4)+"s";
     document.body.appendChild(petal);
@@ -138,3 +134,4 @@ function fireworks(){
 
 </body>
 </html>
+
